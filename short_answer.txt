@@ -7,9 +7,8 @@ The client is the one that sends the request, while the server is the one that r
 
 -------------------
 2) What do we mean by a "route" on a server? - change wording
-A "route" on a server is refers to a predetermined path or endpint on the server that is associated with a specific 
-resource functionality. 
-It defines how the server should respond when a client--usually a web browser--makes a request to a particular URL.
+A "route" on a server defines how the server should respond when a client/web browser makes a request to a particular URL.
+A "route" is what refers to a predetermined path/endpint on the server, which is associated with a specific resource functionality. 
 
 
 -------------------
