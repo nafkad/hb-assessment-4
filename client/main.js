@@ -32,8 +32,22 @@ fortuneBtn.addEventListener('click', getFortune)
     // 2. A request sent via axios 
     // 3. A route on your server that sends a response
 
+
+// number
+const numberBtn = document.querySelector("#numberButton")
+
+const getNumber = () => {
+    axios.get("http://localhost:4000/api/number/")
+        .then(res => {
+            const data = res.data;
+            alert(data);
+        });
+};
+
+numberBtn.addEventListener('click', getNumber)
+
 //name
-const nameBtn = document.querySelector("#fortuneName")
+const nameBtn = document.querySelector("#nameButton")
 
 const getName = () => {
     axios.get("http://localhost:4000/api/name/")
@@ -45,21 +59,8 @@ const getName = () => {
     
 nameBtn.addEventListener('click', getName)
 
-const numberBtn = document.querySelector("#fortuneNumber")
-
-// number
-const getNumber = () => {
-    axios.get("http://localhost:4000/api/number/")
-        .then(res => {
-            const data = res.data;
-            alert(data);
-        });
-};
-
-numberBtn.addEventListener('click', getNumbere)
-
 // instructor
-const instructorBtn = document.querySelector("#fortuneInstructor")
+const instructorBtn = document.querySelector("#instructorButton")
 
 const getInstructor = () => {
     axios.get("http://localhost:4000/api/instructor/")

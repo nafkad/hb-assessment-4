@@ -6,6 +6,7 @@ app.use(cors());
 app.use(express.json());
 
 const controller = require('./controller')
+console.log(controller) // debugging attempt
 
 app.get("/api/compliment", controller.getCompliment);
 
@@ -21,6 +22,6 @@ app.get("/api/fortune", controller.getFortune);
     // 2. A request sent via axios 
     // 3. A route on your server that sends a response
 
-app.get("/api/number", controller.getNumber);
-app.get("/api/name", controller.getName);
+app.get("/api/number", controller.getLuckyNumber);
+app.get("/api/name", controller.getBabyName);
 app.get("/api/instructor", controller.getInstructor);

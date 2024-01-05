@@ -23,7 +23,7 @@ module.exports = {
             "A faithful friend is a strong defense.", 
             ];
         // Choose random fortune
-        let randomIndex = Math.floor(Math.random() * fortunes.lenghth);
+        let randomIndex = Math.floor(Math.random() * fortunes.length);
         let randomFortune = fortunes[randomIndex];
 
         res.status(200).send(randomFortune);
@@ -36,9 +36,9 @@ module.exports = {
     // 3. A route on your server that sends a response
 
     getLuckyNumber: (req, res) => {
-        const numbers = [2, 7, 11, 14, 94];
+        const numbers = ["2", "7", "11", "14", "94"];
         // Choose random number
-        let randomIndex3 = Math.floor(Math.random() * numbers.lenghth);
+        let randomIndex3 = Math.floor(Math.random() * numbers.length);
         let randomNumber = numbers[randomIndex3];
 
         res.status(200).send(randomNumber);
@@ -47,7 +47,7 @@ module.exports = {
     getBabyName: (req, res) => {
         const names = ["Adam", "Alex", "Amy", "Amanda", "Aden"];
         // Choose random name
-        let randomIndex4 = Math.floor(Math.random() * names.lenghth);
+        let randomIndex4 = Math.floor(Math.random() * names.length);
         let randomName = names[randomIndex4];
 
         res.status(200).send(randomName);
@@ -56,8 +56,8 @@ module.exports = {
     getInstructor: (req, res) => {
         const instructors = ["Tom", "Dick", "Harry", "Mary", "Jane"];
         // Choose random instructor
-        let randomIndex5 = Math.floor(Math.random() * instructors.lenghth);
-        let randomInstructor = fortunes[randomIndex5];
+        let randomIndex5 = Math.floor(Math.random() * instructors.length);
+        let randomInstructor = instructors[randomIndex5];
 
         res.status(200).send(randomInstructor);
     },
